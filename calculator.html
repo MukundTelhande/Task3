@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   <div class="calculator-edit">
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <button onclick="clearDisplay()" class="button-display">C</button>
+        <button onclick="appendDigit('7')" class="button-display">7</button>
+        <button onclick="appendDigit('8')" class="button-display">8</button>
+        <button onclick="appendDigit('9')" class="button-display">9</button>
+        <button onclick="setOperation('+')" class="button-display">+</button>
+        <button onclick="appendDigit('4')" class="button-display">4</button>
+        <button onclick="appendDigit('5')" class="button-display">5</button>
+        <button onclick="appendDigit('6')" class="button-display">6</button>
+        <button onclick="setOperation('-')" class="button-display">-</button>
+        <button onclick="appendDigit('1')" class="button-display">1</button>
+        <button onclick="appendDigit('2')" class="button-display">2</button>
+        <button onclick="appendDigit('3')" class="button-display">3</button>
+        <button onclick="setOperation('*')" class="button-display">*</button>
+        <button onclick="appendDigit('0')" class="button-display">0</button>
+        <button onclick="setOperation('/')" class="button-display">/</button>
+        <button onclick="calculate()" class="button-display">=</button>
+    </div>
+   </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
